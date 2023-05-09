@@ -15,7 +15,7 @@ export default function App() {
   }, [])
 
   async function getDados(){
-    await axios.get(`http://ddragon.leagueoflegends.com/cdn/13.9.1/data/en_US/champion.json`).then(function (response){
+    await axios.get(`http://ddragon.leagueoflegends.com/cdn/13.9.1/data/pt_BR/champion.json`).then(function (response){
       setDados(response.data.data)
     })  
   }
