@@ -13,6 +13,7 @@ export default function Cards({champion}){
 
     useEffect(() => {
         getDados()
+        generateColor()
     }, [])
 
     async function getDados(){
@@ -22,8 +23,6 @@ export default function Cards({champion}){
                 title: response.data.data[champion].title,
             })
         })
-
-        setColor(generateColor())
     }
 
     function generateColor() {
@@ -34,7 +33,7 @@ export default function Cards({champion}){
           color += letters[Math.floor(Math.random() * 16)];
         }
         
-        return color;
+        setColor(color)
       }
 
     return(
