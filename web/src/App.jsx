@@ -3,7 +3,7 @@ import './App.scss'
 
 import axios from 'axios'
 
-import Cards from './components/Cards'
+import Cards from './components/Cards/index'
 
 
 export default function App() {
