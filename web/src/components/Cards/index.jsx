@@ -17,7 +17,7 @@ export default function Cards({champion}){
     }, [])
 
     async function getDados(){
-        await axios.get(`http://ddragon.leagueoflegends.com/cdn/13.9.1/data/pt_BR/champion.json`).then(function (response){
+        await axios.get(`https://ddragon.leagueoflegends.com/cdn/13.9.1/data/pt_BR/champion.json`).then(function (response){
             setDados({
                 name: response.data.data[champion].name,
                 title: response.data.data[champion].title,
