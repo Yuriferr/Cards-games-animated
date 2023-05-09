@@ -1,0 +1,92 @@
+.Cards{
+    position: relative;
+    width: 500px;
+    height: 230px;
+    padding: 15px;
+    background: linear-gradient(60deg, #151516 0%, #1d2229 100%);
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    h2{
+        z-index: 99;
+        position: absolute;
+        bottom: 25px;
+        right: 130px;
+        font-size: 50px;
+        font-weight: 700;
+        color: white;
+        pointer-events: none;
+        transition: 0.2s ease;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    p{
+        z-index: 99;
+        position: absolute;
+        bottom: 30px;
+        right: 130px;
+        width: 150px;
+        color: white;
+        opacity: 0;
+        font-size: 12px;
+        text-align: right;
+        letter-spacing: 1px;
+        transition: 0.2s ease;
+    }
+    span{
+        z-index: 99;
+        position: absolute;
+        top: 60px;
+        right: 35px;
+        color: white;
+        letter-spacing: 1px;
+        writing-mode: vertical-lr;
+        transition: 0.2s ease;
+        opacity: 0.7;
+    }
+    .pic{
+        z-index: 99;
+        width: 395px;
+        height: 200px;
+        background-size: cover;
+        border-radius: 12px;
+        filter: grayscale(100%);
+        transition: 0.3s ease;
+    }
+    button{
+        position: absolute;
+        right: 30px;
+        bottom: 40px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        outline: none;
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+
+    &:hover{
+        h2{
+            bottom: 80px;
+            right: 50px;
+        }
+        p{
+            opacity: 1;
+            right: 60px;
+        }
+        span{
+            opacity: 0;
+            top: 80px;
+        }
+        .pic{
+            filter: grayscale(0);
+            width: 470px;
+        }
+        button{
+            transform: scale(16.5);
+            opacity: 0;
+        }
+    }
+}
